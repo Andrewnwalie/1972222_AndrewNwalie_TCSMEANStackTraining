@@ -1,0 +1,9 @@
+body{
+    background-image: url(bimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /*makes the image move and not stay on the top*/
+}
+p{
+    color:white;
+}

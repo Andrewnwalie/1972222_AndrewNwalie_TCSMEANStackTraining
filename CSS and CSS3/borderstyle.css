@@ -1,0 +1,16 @@
+#d1{
+    border-color: cyan;
+    border-width: 4px;
+    border-style:solid;
+}
+
+#d2{
+    border-color: darkmagenta;
+    border-style: groove;
+    border-width: 4px;
+}
+
+#d3{
+    border:solid red 4px;
+
+}

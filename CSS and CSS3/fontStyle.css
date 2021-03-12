@@ -1,0 +1,11 @@
+.abc{
+    font-family:fantasy;
+    font-size: 50px;
+    font-style: oblique;
+    text-align: center;
+    color: blueviolet;
+    text-decoration:underline;
+}
+a{
+    text-decoration: none;
+}

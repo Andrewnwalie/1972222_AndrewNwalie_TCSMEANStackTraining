@@ -1,0 +1,21 @@
+div{
+    padding: 20px;
+    border: red 2px solid;
+    margin:10px;
+    height:120px;
+    width: 150px;
+    float:left;
+   animation-name: myanime;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+
+}
+
+@keyframes myanime{
+    0%{background-color: red;}
+    25%{background-color: green;}
+    50%{background-color: purple;}
+    75%{background-color: slategray;}
+    100%{background-color: thistle;}
+
+}

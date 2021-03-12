@@ -1,0 +1,14 @@
+div{
+    padding-left: 20px;
+    border:red solid 2px;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    float:left;
+    border-radius: 50% 50% 50% 50%;
+    text-align: center;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

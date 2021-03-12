@@ -1,0 +1,22 @@
+#fontDesign{
+    font-weight: 1000;
+    text-align: center;
+    font-family:inherit;
+    color:white;
+    background-color: black;
+
+}
+
+#tablestyle  th, td{
+border:1px solid grey;
+border-collapse:collapse;
+padding:10px;
+}
+
+#pfont{
+    color: purple;
+    text-align: right;
+    font-size: 50px;
+    margin-right: 10px;
+    
+}

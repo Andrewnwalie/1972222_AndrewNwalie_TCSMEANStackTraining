@@ -1,0 +1,24 @@
+div{
+    padding: 20px;
+    border:solid red 2px;
+    margin:10px;
+    width:120px;
+    height: 150px;
+    float:left;
+}
+#d1{
+    /*transform: translate(100px,100px);
+    transform: translateX(400px);
+    transform: translateY(400px);*/
+    transform: rotate(90deg);
+
+}
+
+#d2{
+    transform: skew(30deg, 30deg);
+}
+
+#d3{
+    transform: scale(2,2);
+    margin: 100px;
+}

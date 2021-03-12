@@ -1,0 +1,72 @@
+div{
+    padding: 20px;
+    border: solid black 2px;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    float: left;
+    position:fixed;
+    text-align: center;
+
+}
+
+#d1{
+   transform: translate(-50%, -50%);
+   animation-name: top_left;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+ 
+}
+
+#d2{
+    transform: translate(50%, -50%);
+    animation-name: top_right;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+
+}
+
+#d3{
+    transform: translate(-50%,50%);
+    animation-name: bottom_left;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+}
+
+#d4{
+    transform: translate(50%,50%);
+    animation-name: bottom_right;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+}
+   
+
+@keyframes top_left{
+    0%{background-color: red;top:11%;left:6%}
+    50%{background-color: red;top:50%;left:50%;}
+    100%{background-color: red;top:11%;left:6%}
+
+}
+
+@keyframes top_right{
+    0%{background-color: blue;top:11%;right:6%}
+    50%{background-color: blue;top:50%;right:50%;}
+    100%{background-color: blue;top:11%;right:6%}
+
+}
+
+@keyframes bottom_left{
+    0%{background-color: green;bottom:11%;left:6%;}
+    50%{background-color: green;bottom:50%;left:50%;}
+    100%{background-color: green;bottom:11%;left:6%;}
+
+}
+
+@keyframes bottom_right{
+    0%{background-color: yellow;bottom:11%;right:6%;}
+    50%{background-color: yellow;bottom:50%;right:50%;}
+    100%{background-color: yellow;bottom:11%;right:6%;}
+
+}
+
+
