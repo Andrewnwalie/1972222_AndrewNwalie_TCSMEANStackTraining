@@ -1,0 +1,21 @@
+#Bimg{
+
+    width:15%;
+    height:auto;
+   
+}
+
+#navborder{
+    border: 2px solid;
+    background-color: yellow;
+}
+
+#resetB{
+    position: relative;
+    right :400px;
+
+}
+
+img[src=""] {
+    display: none;
+ }
