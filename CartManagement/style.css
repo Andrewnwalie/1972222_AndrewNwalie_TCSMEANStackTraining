@@ -1,0 +1,55 @@
+.container{
+    order:3;
+    
+}
+body{
+    background-color: #484848;
+}
+
+div{
+   height: min-content;
+   width: auto;
+    margin-right:auto;
+    padding-right:auto;
+}
+div .row{
+    border: solid 2px white;
+    display:inline-flexbox;
+    
+}
+.col-sm-3{
+    background-color: gray;
+}
+img{
+    height: 150px;
+    width: auto;
+}
+
+button{
+   float: left;
+   margin:4%;
+}
+
+span {
+    position: relative;
+  float:left;
+  top:20px;
+  left:180px;
+}
+.navbut{
+    position: relative;
+    float: right;
+    right:10%;
+}
+.pic{
+    height: 150px;
+    width: auto;
+}
+
+#csize{
+    color:white;
+    position: relative;
+    float:right;
+    top:30px;
+    right:40px;
+}

@@ -30,7 +30,6 @@ function printblogs() {
 
         var table = document.getElementById('Trow');
         var newdiv = table.cloneNode(true);
-        var tname = document.getElementById("table");
 
         for (var a = 0; a < localStorage.length; a++) {
             var Binfo = [];
