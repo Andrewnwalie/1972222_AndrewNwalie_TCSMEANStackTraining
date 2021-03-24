@@ -1,0 +1,27 @@
+<div class='container-fluid' style="border:white 2px dotted; width:500px; float:left; background-color: thistle;  ">
+    <h1><u>Portfolio</u></h1>
+    <h3>Welcome {{user}}</h3>
+    <form #contacts='ngForm' (ngSubmit)='addInfo(contacts)' class='formControl'>
+        <label for="cName">Contact Name</label>
+        <div class='form-group'>
+            <input type="text" name='cName' ngModel id='cName'><br>
+        </div>
+        <label for="cNum">Phone No.</label>
+        <div class='form-group'>
+            <input type="text" name='cNum' id='cNum' ngModel><br>
+        </div>
+        <br>
+        <input type="submit" class="btn btn-dark">
+    </form>
+</div>
+<br><br>
+<div class="container-fluid" id='table' style="border:solid black 3px; width:30%; float:left; margin-left:60px">
+    <div class='row'>
+        <div class='col' style="border:solid white 2px">
+            Name
+        </div>
+        <div class='col' style="border:solid white 2px">
+            Phone No.
+        </div>
+    </div>
+</div>

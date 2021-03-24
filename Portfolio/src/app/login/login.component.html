@@ -1,0 +1,26 @@
+<div id='centering'>
+    <div class="container login-container" style="width:800px;">
+        <div class='row'>
+
+            <div class='col-md-10 login-form-2'>
+                <form #userLogin='ngForm' (ngSubmit)=validate(userLogin.value)>
+                    <h2 style="color: aliceblue;">Login</h2> <br>
+                    <div class='form-group'>
+                        <input type="text" name='user1' placeholder='UserName' ngModel><br>
+                    </div>
+                    <br>
+
+                    <div class='form-group'>
+                        <input type="password" name='pass1' placeholder="Password" ngModel><br>
+                    </div>
+                    <br>
+                    <input type="submit" value='Login' class='btnSubmit' style="width: 100px;">
+                    <!--<input type="reset" value='Clear' class='btnSubmit' style="width: 100px;">--><br><br><br>
+                    <!-- I don't think this is needed-->
+                    <a routerLink='/Register' style="color:white">Register</a>
+                </form>
+            </div>
+        </div>
+        <span style="color:red;">{{msg}}</span>
+    </div>
+</div>
