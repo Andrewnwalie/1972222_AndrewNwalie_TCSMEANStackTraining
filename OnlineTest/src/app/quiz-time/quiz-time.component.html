@@ -1,0 +1,36 @@
+<div class='container' id='contain'>
+
+    <div id='A0'></div>
+
+    <div id='A1'> <label for="choiceA"></label>
+        <input type="radio" name='choices' value='A' id='radio1'>
+        <span id='A11'></span>
+    </div>
+
+    <div id='A2'> <label for="choiceB"></label>
+        <input type="radio" name='choices' value='B' id='radio2'>
+        <span id='A22'></span>
+    </div>
+
+    <div id='A3'> <label for="choiceA"></label>
+        <input type="radio" name='choices' value='C' id='radio3'>
+        <span id='A33'></span>
+    </div>
+
+    <div id='A4'> <label for="choiceA"></label>
+        <input type="radio" name='choices' value='D' id='radio4'>
+        <span id='A44'></span>
+    </div>
+
+    <div id='prevDiv'>
+        <input type="button" value='Previous' id='prevButton' (click)='prevQuestion(questionList);'
+            style='display: none;'>
+    </div>
+    <div id='nextD'>
+        <input type="button" value='Next' id='nextButton' (click)='nextQuestion(questionList);'>
+    </div>
+    <div id='doneDiv'>
+        <input type="button" value='Submit' id='finishButton' (click)='finish();' style="display: none;">
+    </div>
+
+</div>

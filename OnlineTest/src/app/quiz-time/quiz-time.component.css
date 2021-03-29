@@ -1,0 +1,33 @@
+input{
+    margin:15px;
+}
+
+#contain{
+    top:300px;
+    border-radius: 3%;
+
+    position:relative;
+    background-color: white;
+    width: 45%;
+    height: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#nextD,#prevDiv, #doneDiv{
+    display: inline-block;
+ 
+    width: fit-content;
+    height: auto;
+}
+
+
+#nextD,#doneDiv{
+    display: inline-block;
+ position: relative; 
+ left:750px;
+
+}
+
+#A0 {
+    padding: 30px;
+}

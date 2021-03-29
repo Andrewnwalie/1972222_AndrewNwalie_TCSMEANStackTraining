@@ -1,0 +1,82 @@
+[
+    {
+        "Qnumber": "What is 2 + 2?",
+        "choiceA": "4",
+        "choiceB": "22",
+        "choiceC": "12",
+        "choiceD": "42",
+        "correct": "A"
+    },
+    {
+        "Qnumber": "What is 9 ÷ 3?",
+        "choiceA": "1",
+        "choiceB": "3",
+        "choiceC": "6",
+        "choiceD": "2",
+        "correct": "B"
+    },
+    {
+        "Qnumber": "What color is an apple?",
+        "choiceA": "Red",
+        "choiceB": "Purple",
+        "choiceC": "Blue",
+        "choiceD": "Yellow",
+        "correct": "A"
+    },
+    {
+        "Qnumber": "How many fingers in one hand?",
+        "choiceA": "2",
+        "choiceB": "3",
+        "choiceC": "4",
+        "choiceD": "5",
+        "correct": "D"
+    },
+    {
+        "Qnumber": "What does HTML stand for?",
+        "choiceA": "Happy to make language",
+        "choiceB": "Hyper Text model language",
+        "choiceC": "Hyper Text Markup Language",
+        "choiceD": "None of the above",
+        "correct": "C"
+    },
+    {
+        "Qnumber": "How many days in a year?",
+        "choiceA": "300",
+        "choiceB": "30",
+        "choiceC": "365",
+        "choiceD": "years are not real",
+        "correct": "C"
+    },
+    {
+        "Qnumber": "What is 7 - 3?",
+        "choiceA": "4",
+        "choiceB": "2",
+        "choiceC": "6",
+        "choiceD": "1",
+        "correct": "A"
+    },
+    {
+        "Qnumber": " What’s the shortcut for the “copy” function on most computers?",
+        "choiceA": "Ctrl+ a",
+        "choiceB": "Ctrl+ b",
+        "choiceC": "Ctrl+ c",
+        "choiceD": "Ctrl+ d",
+        "correct": "C"
+    },
+    {
+        "Qnumber": "What part of the atom has no electric charge?",
+        "choiceA": "Protons",
+        "choiceB": "Electrons",
+        "choiceC": "Nucleus",
+        "choiceD": "Neutrons",
+        "correct": "D"
+    },
+    {
+        "Qnumber": "How many moons does earth Have?",
+        "choiceA": "2",
+        "choiceB": "1",
+        "choiceC": "3",
+        "choiceD": "0",
+        "correct": "B"
+    }
+]
