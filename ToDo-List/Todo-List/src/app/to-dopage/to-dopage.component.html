@@ -1,0 +1,88 @@
+<h2
+    style='position: relative; text-align: center; font-size: 50px;margin: 20px; color:white;-webkit-text-stroke: 2px;-webkit-text-stroke-color: black;'>
+    Task Tracker</h2>
+<div id='contain'>
+    <u>
+        <h2>To-do Tasks</h2>
+    </u>
+    <form #listRef='ngForm' (ngSubmit)='AddList(listRef.value)'>
+
+        <b><span>ID: </span></b>
+        <mat-form-field>
+            <mat-label>ID</mat-label>
+            <input matInput type='text' name='id' ngModel>
+        </mat-form-field>
+        <br>
+
+        <b><span>Name: </span></b>
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput type='text' name='Name' ngModel>
+        </mat-form-field>
+        <br>
+
+        <b><span>Task:</span></b>
+        <mat-form-field>
+            <mat-label>Task</mat-label>
+            <textarea matInput cols="30" rows="5" name='Task' ngModel></textarea>
+        </mat-form-field>
+        <br>
+
+        <b><span>DeadLine: </span></b>
+        <mat-form-field>
+            <mat-label>DueDate</mat-label>
+            <input matInput type='date' name='Date' ngModel>
+        </mat-form-field>
+        <br>
+        <div style="position:relative;left:430px; top:-5px">
+            <button mat-raised-button color='primary' type="submit">Store</button>
+        </div>
+    </form>
+</div>
+
+<!-- table content-->
+
+<div id='tablecontain'>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="id">
+            <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>>
+            <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>>
+        </ng-container>
+
+        Name Column
+        <ng-container matColumnDef="Name">
+            <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.Name}} </mat-cell>>
+        </ng-container>
+
+        Weight Column
+        <ng-container matColumnDef="Task">
+            <mat-header-cell *matHeaderCellDef> Task </mat-header-cell>>
+            <mat-cell *matCellDef="let element"> {{element.Task}} </mat-cell>>
+        </ng-container>
+
+        Weight Column
+        <ng-container matColumnDef="Date">
+            <mat-header-cell *matHeaderCellDef> DeadLine </mat-header-cell>>
+            <mat-cell *matCellDef="let element"> {{element.Date}} </mat-cell>>
+        </ng-container>
+
+
+        <mat-header-row *matHeaderRowDef='displayedColumns'></mat-header-row>>
+        <mat-row *matRowDef="let row; columns:displayedColumns;"></mat-row>>
+    </table>
+</div>
+
+<!--<table id="dataSource">
+    <tr>
+        <th *ngFor="let col of displayedColumns">
+            {{col}}
+        </th>
+    </tr>
+    <tr *ngFor="let user of dataSource">
+        <td *ngFor="let col of index">
+            {{user[col]}}
+        </td>
+    </tr>
+</table>-->

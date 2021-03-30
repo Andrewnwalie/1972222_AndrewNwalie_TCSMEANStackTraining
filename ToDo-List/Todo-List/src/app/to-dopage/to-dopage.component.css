@@ -1,0 +1,56 @@
+span {
+
+    float:left;
+    width: 90px;
+    margin-top:18px;
+   
+}
+
+
+#contain{
+    margin-left: 1%;
+    margin-top: 4%;
+    border: 2px solid black;
+    width: 500px;
+  background-color: white;
+}
+
+#tablecontain{
+   position: relative;
+   float:right;
+   top:-375px;
+   right: 20%;
+
+}
+
+table{
+    width:900px;
+}
+
+h1
+{
+    text-align: center;
+    color: #4CAF50;
+}
+#users {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+#users td, #users th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+#tablecontain mat-row:nth-child(even){background-color: #99ebff;}
+  
+
+  
+#tablecontain mat-header-cell {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #00ccff;
+    color: white;
+  }
