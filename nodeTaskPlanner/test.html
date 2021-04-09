@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="border: 2px solid black; width: 700px;">
+        <h2 style="text-align: center;">Task Planner</h2>
+        <form method="GET">
+            <div>
+                <div style="width: 120px;display: inline-block;">Employee Id</div>
+                <input type="text" id='empID'> <br> <br>
+            </div>
+            <div>
+                <div style="width: 120px;display: inline-block;"> Task id</div>
+                <input type="text" id="ID"> <br> <br>
+            </div>
+            <div>
+                <div style="width: 120px;display:inline-block">Task</div>
+                <input type="text" id="Task"> <br> <br>
+            </div>
+            <div>
+                <div style="width: 120px;border:2px black solid; display: inline-block;">Duedate</div>
+                <input type="text" id="date"> <br> <br>
+
+            </div>
+            <div><input type="submit" id="submit"></div>
+        </form>
+    </div>
+
+    <!--table-->
+    <br> <br>
+    <div>
+        <table style="border:2px solid black; ">
+            <th>
+                <tr>
+                    <td style="padding-right: 70px;">Employee ID</td>
+                    <td style="padding-right: 70px;">Task ID</td>
+                    <td style="padding-right: 70px;">Task</td>
+                    <td style="padding-right: 70px;">DueDate</td>
+                <tr name="newRow"></tr>
+                </tr>
+            </th>
+        </table>
+    </div>
+</body>
+
+</html>
