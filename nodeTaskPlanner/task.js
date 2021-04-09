@@ -45,7 +45,6 @@ var body = `<html>
 </html>`
 
 let server = http.createServer((request, response) => {
-    console.log(request.url);
     var pathInfo = url.parse(request.url, true).pathname;
     if (request.url == "/") {
         response.setHeader("content-type", "text/html");
@@ -53,8 +52,6 @@ let server = http.createServer((request, response) => {
     }
     if (request.url != "/favicon.ico") {
         var pathInfo = url.parse(request.url, true).pathname;
-        console.log("this is path info")
-        console.log(pathInfo);
         if (pathInfo == "/add") {
 
             let newTask = new Object();
@@ -65,7 +62,6 @@ let server = http.createServer((request, response) => {
             newTask.date = data.date;
             jsondata.push(newTask);
             response.write(body);
-            console.log(jsondata);
 
             //convert json to string 
             var empString = JSON.stringify(jsondata);
@@ -79,16 +75,11 @@ let server = http.createServer((request, response) => {
 
         else if (pathInfo == "/delete") {
             response.write(body);
-            console.log("entered delete");
             var Deletedata = url.parse(request.url, true).query;
             let del = Deletedata.TaskID;
             var json = JSON.parse(data2);
-            // console.log(json);
-            // console.log("this is del");
-            // console.log(del);
             var Len = Object.keys(json).length;
             for (i = 0; i < Len; i++) {
-                console.log(json[i].TaskID);
                 if (json[i].TaskID == del) {
                     json.splice(i, 1);
                     break;
@@ -114,9 +105,7 @@ let server = http.createServer((request, response) => {
                            </tr>`
             response.write(body);
             let json = JSON.parse(data2);
-            console.log(json);
-            let size = Object.keys(json).length
-            console.log(size);
+            let size = Object.keys(json).length;
             for (let i = 0; i < size; i++) {
                 let tablerows = `<tr>
                                         <td style="padding-right: 90px;">${jsondata[i].id}</td>
@@ -141,10 +130,6 @@ let server = http.createServer((request, response) => {
 
 
 
-/*fs.writeFile("task.json", Jsonobj, (err) => {
-    if (!err) {
-        console.log("Data store in a file info2");
-    }
-});*/
+
 
 
