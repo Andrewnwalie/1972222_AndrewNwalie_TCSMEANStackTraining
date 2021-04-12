@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket IO</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        function msgdisplay() {
+            var socket = io();
+            var name = document.getElementById("Username");
+            var msg = document.getElementById("msg");
+            socket.emit("username", name.value);
+            socket.emit("msg", msg.value);
+        }
+    </script>
+</head>
+
+<body>
+    <div style="border:2px solid black; width: 400px; padding:10px;">
+
+        <h2>Client Message</h2>
+
+        <span> <label>Name</label></span>
+        <input type="text" id="Username" placeholder="Name">
+        <br> <br> <br>
+        <div><label>Message</label></div>
+        <div style="display: inline-block;">
+            <textarea id="msg" cols="30" rows="10"></textarea>
+        </div>
+        <br> <br>
+        <input type="submit" value="Submit" onclick="msgdisplay();" style="position: relative; left:150px;">
+    </div>
+</body>
+
+</html>
