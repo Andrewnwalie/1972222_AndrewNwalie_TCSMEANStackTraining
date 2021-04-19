@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        function Update() {
+            var socket = io();
+            var courseID = document.getElementById("cId");
+            var Price = document.getElementById("price");
+            if (courseID.value == "" || Price.value == "") {
+                document.getElementById("msg").innerHTML = "All Fields Required"
+            }
+            else {
+                socket.emit("cIdupdate", courseID.value);
+                socket.emit("price", Price.value);
+                courseID.value = "";
+                Price.value = "";
+                socket.on("update", (data) => {
+                    document.getElementById("msg").innerHTML = data;
+                })
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div style="border:solid black 2px; width:500px">
+        <h2>Update Course</h2>
+        <label>courseID</label>
+        <input type="number" id="cId"> <br> <br>
+        <label>Price</label>
+        <input type="text" id="price"> <br> <br>
+        <input type="submit" onclick="Update()"> <br> <br>
+        <p id="msg" style="color:red"></p>
+    </div>
+</body>
+
+</html>

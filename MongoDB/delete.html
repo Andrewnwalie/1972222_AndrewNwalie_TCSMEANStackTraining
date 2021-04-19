@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        function remove() {
+            var socket = io();
+            var courseID = document.getElementById("cId");
+            if (courseID.value == "") {
+                document.getElementById("msg2").innerHTML = "Enter Course Id"
+            }
+            else {
+                socket.emit("cId", courseID.value);
+                courseID.value = "";
+                socket.on("delete", (data) => {
+                    document.getElementById("msg2").innerHTML = data;
+                })
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div style="border:solid black 2px; width:500px">
+        <h2>Delete Course</h2>
+        <label>courseID</label>
+        <input type="number" id="cId">
+        <input type="submit" onclick="remove()"> <br> <br>
+        <p id="msg2" style="color:red"></p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+        socket.on("array", (data) => {
+            var table = `<table id="table" border=1 style="padding:20px;">
+        <tr>
+            <th>id</th>
+            <th>CourseName</th>
+            <th>Description</th>
+            <th>Amount</th>
+        </tr>`
+
+            for (i = 0; i < data.length; i++) {
+                tdata = `<tr>
+                                <td>${data[i]._id}</td>
+                                <td>${data[i].courseName}</td>
+                                <td>${data[i].description}</td>
+                                <td>${data[i].Amount}</td>
+                         </tr>`
+                table = table + tdata;
+
+            }
+            table = table + `</table>`
+            document.getElementById("tinfo").innerHTML = table;
+        })
+
+    </script>
+</head>
+
+<body>
+    <h2>Fetch pls</h2>
+    <div id="tinfo">
+
+    </div>
+
+</body>
+
+</html>
